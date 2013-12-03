@@ -1,4 +1,13 @@
 King601::Application.routes.draw do
+  root 'pages#home'
+
+  get "contact" => "pages#contact"
+  get "server" => "pages#servers"
+  get "servers" => "pages#servers"
+  get "uhc" => "pages#events"
+  get "events" => "pages#events"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
